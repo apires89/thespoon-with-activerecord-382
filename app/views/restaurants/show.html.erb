@@ -1,0 +1,10 @@
+<h1>Restaurant #SHOW</h1>
+<p><%= @restaurant.name %></p>
+<p><%= @restaurant.rating %></p>
+<p><%= link_to "Edit", edit_restaurant_path(@restaurant) %></p>
+<%= link_to "Delete", restaurant_path(@restaurant),
+method: :delete,
+data: {confirm: "Are you certain?"} %>
+
+<%= link_to "Back", restaurants_path %>
+
